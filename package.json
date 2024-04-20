@@ -1,0 +1,11 @@
+{
+  "name": "menta",
+  "version": "1.0.0",
+  "description": "this app can be especially helpful when you're feeling overwhelmed or anxious",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Mayra del Valle Gonzalez",
+  "license": "ISC"
+}
