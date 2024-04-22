@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
-function App(){
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Sidebar from './components/sidebar/Sidebar';
+function App() {
   const [backendData, setBackendData] = useState([{}])
   useEffect(() => {
     fetch("/api").then(
@@ -13,22 +18,16 @@ function App(){
   }, [])
   return (
     <div>
-      {(typeof backendData.users === 'undefined') ? (
-        <p>Loading...</p>
-      ): (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-        ))
-      )}
-<div>
-  <div className='grid-container' id='caja'>
-  <header className='header'>HEADER</header>
-  <nav className='navbar'>NAVBAR</nav>
-  <aside className='sidebar'>SIDEBAR</aside>
-  <article className='main'>MAIN</article>
-  <footer className='footer'>FOOTER</footer>
-  </div>
-</div>
+
+      <div>
+        <div className='grid-container' id='caja'>
+          <header className='header'><Header /></header>
+          <nav className='navbar'>  <Navbar /></nav>
+          <aside className='sidebar'><Sidebar /></aside>
+          <article className='main'><Main backendData={backendData} /></article>
+          <footer className='footer'><Footer /></footer>
+        </div>
+      </div>
 
 
     </div>
