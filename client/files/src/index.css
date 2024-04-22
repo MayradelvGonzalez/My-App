@@ -33,11 +33,12 @@ code {
   display: grid;
   gap: 20px;
   grid-template: 
-  "header"
+  "header" 200px
   "navbar"
   "main"
   "sidebar"
-  "footer";
+  "footer" 100px
+  ; 
   .header{
     grid-area: header;
     background-color:gold;
@@ -60,6 +61,23 @@ code {
     grid-area: footer;
     background-color:purple;
   }
+  @media (min-width:768px){
+      grid-template: 
+      "header navbar" 50px
+      "header navbar" 50px
+      "sidebar main" auto
+      "footer footer" 100px/
+      200px auto
+      ; 
+  }
+  @media (min-width:992px){
+    grid-template: 
+    "header header header" 100px
+    "navbar main sidebar" auto
+    "footer footer footer" 100px/
+    200px auto 200px
+    ; 
+}
 }
 
 
