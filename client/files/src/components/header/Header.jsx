@@ -5,9 +5,10 @@ function Header(){
     return (
     <div id='contenedorHeader'>
        
-            
-    <h2>MENTA <img src={imagen} alt="logo" id='logo'/></h2>
-<h2>Hello</h2> 
+            <div className='texto'> <h2>MENTA</h2></div>
+   
+    <div className='i'> <img src={imagen} alt="logo" id='logo'/></div>
+
     </div>)
    
 }
