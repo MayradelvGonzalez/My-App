@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "magic.css": "^1.4.8"
+    "@emotion/react": "^11.13.5",
+    "magic.css": "^1.4.8",
+    "react-awesome-reveal": "^4.2.14"
   }
 }
