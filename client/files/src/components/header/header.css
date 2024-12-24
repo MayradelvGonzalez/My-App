@@ -21,3 +21,40 @@
 
     
 }
+
+@media (width: 400px){
+    #contenedorHeader{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        gap: 1em;
+        padding: 0.6em;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+        border-radius:0.6em;
+    
+        
+    }
+}
+@media (width: 820px){
+    #contenedorHeader{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        /* gap: 1em; */
+        padding: 0.4em;
+    }
+    #logo{
+        width: 40px;
+        height: 40px;
+        border-radius:0.6em;
+    
+        
+    }
+}
