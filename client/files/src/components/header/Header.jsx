@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 // import imagen from '../../img/MENTA.png';
-import imagen from '../../img/MENTA (1).gif';
+import imagen from '../../img/MENTAGIF.gif';
 function Header(){ 
     return (
     <div id='contenedorHeader'>

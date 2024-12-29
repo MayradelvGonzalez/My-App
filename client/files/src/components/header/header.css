@@ -11,7 +11,8 @@
     /* flex-direction: row; */
     flex-wrap: wrap;
     gap: 1em;
-    padding: 1em;
+    padding: 0.5em;
+    background-color:white;
 }
 
 #logo{

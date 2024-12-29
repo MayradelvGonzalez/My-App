@@ -49,7 +49,7 @@ code {
   ; 
   .header{
     grid-area: header;
-    background-color:gold;
+    background-color:white;
 
   }
   .navbar {
