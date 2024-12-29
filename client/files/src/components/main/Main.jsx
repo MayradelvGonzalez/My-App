@@ -1,17 +1,41 @@
 import React from 'react';
+import './main.css';
 
 function Main({ backendData }) {
+  const [backendData, setBackendData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api");
+        const data = await response.json();
+        setBackendData(data);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
-      {backendData && backendData.users ? (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-        ))
-      ) : backendData === null ? (
-        <p>Error al cargar los datos.</p>
-      ) : (
-        <p>Loading...</p>
-      )}
+    {isLoading ? (
+      <p>Loading...</p>
+    ) : error ? (
+      <p>Error: {error.message}</p>
+    ) : (
+      <ul> 
+        {backendData && backendData.users && (
+          backendData.users.map((user, index) => (
+            <li key={index}>{user}</li>
+          ))
+        )}
+      </ul>
+    )}
     </div>
   );
 }

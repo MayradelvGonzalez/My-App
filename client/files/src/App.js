@@ -73,26 +73,8 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 
-function App() {
-  const [backendData, setBackendData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+function App({backendData}) {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/api");
-        const data = await response.json();
-        setBackendData(data);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <div>
@@ -100,19 +82,8 @@ function App() {
         <header className="header"><Header /></header>
         <nav className="navbar"><Navbar /></nav>
         <aside className="sidebar"><Sidebar /></aside>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : error ? (
-          <p>Error: {error.message}</p>
-        ) : (
-          <ul> 
-            {backendData && backendData.users && (
-              backendData.users.map((user, index) => (
-                <li key={index}>{user}</li>
-              ))
-            )}
-          </ul>
-        )}
+        <main className="main"><main backendData={backendData} /></main>
+      
         <footer className="footer"><Footer /></footer>
       </div>
     </div>
