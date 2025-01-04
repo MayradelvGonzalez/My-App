@@ -14,3 +14,16 @@
 .prueba{
     color:black;
 }
+#listado li{
+    list-style: circle;
+    list-style-position:inside;
+    background-color: yellow;
+    padding: 8px;
+
+}
+#listado li:nth-child(odd){
+    background-color: aqua;
+}
+#listado ul{
+ margin: 10px;
+}

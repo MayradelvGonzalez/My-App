@@ -44,7 +44,7 @@
 
 import React from 'react';
 import './main.css';
-import UserList from './UserList';
+import UserList from './userList';
 
 function Main({ users }) {
   return (
