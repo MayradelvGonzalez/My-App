@@ -1,43 +1,23 @@
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import userdata from '../../data/userdata'; // 
-// import './main.css';
-
-// function UserList() {
-//   const [users, setUsers] = useState([]);
-
-  
-//     useEffect(() => {
-//       setUsers(userdata); // Simplemente asigna los datos directamente al estado
-//     }, []);
-  
-//     return (
-//       <div id='listado'>
-//         <h1>Lista de Usuarios</h1>
-//         <ul>
-//           {users.map((user) => (
-//             <li key={user.id}>{user.name}</li> // Ajusta el nombre de las propiedades según tu estructura de datos
-//           ))}
-//         </ul>
-//       </div>
-//     );
-//   }
-
-//   export default UserList; 
 import React, { useState, useEffect } from 'react';
 import './main.css';
 
 function UserList() {
   const [users, setUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Use setIsLoading
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       try {
-        const response = await fetch('tu_archivo_json.json'); // Reemplaza con la ruta correcta
+        const response = await fetch('./userdata.json'); // Replace with the correct path
         const data = await response.json();
         setUsers(data);
       } catch (error) {
+        setError(error.message); // Use error.message for the error message
         console.error('Error al obtener los datos:', error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -47,11 +27,17 @@ function UserList() {
   return (
     <div id='listado'>
       <h1>Lista de Usuarios</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </ul>
+      {isLoading ? (
+        <p>Cargando...</p>
+      ) : error ? (
+        <p>Error al cargar: {error}</p>
+      ) : (
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
