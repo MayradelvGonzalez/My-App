@@ -1,8 +1,58 @@
-const express = require('express')
+
+
+// const express = require('express');
+// const fs = require('fs'); // Importar el módulo fs para leer archivos
+// const app = express();
+
+
+// const pathToData = '../client/files/src/data/userdata.json'; // Ruta al archivo JSON
+
+// app.get('/api/users', (req, res) => {
+//   fs.readFile(pathToData, 'utf-8', (err, data) => {
+//     if (err) {
+//       console.error('Error al leer el archivo:', err);
+//       res.status(500).json({ error: 'Error al leer el archivo' }); 
+//       return;
+//     }
+
+//     try {
+//       const users = JSON.parse(data);
+//       res.json({ users });
+//     } catch (error) {
+//       console.error('Error al parsear el JSON:', error);
+//       res.status(500).json({ error: 'Error al parsear el JSON' });
+//     }
+//   });
+// });
+
+// app.listen(5000, () => {
+//   console.log("Servidor iniciado en el puerto 5000");
+// });
+
+const express = require('express');
+const fs = require('fs');
 const app = express();
 
-app.get('/api', (req,res) => {
-res.json({"users":["userOne", "userTwo", "userThree"]})
-})
+const pathToData = '/userdata.json'; 
 
-app.listen(3000, () => {console.log("Server started on port 3000");})
+app.get('/api/users', (req, res) => {
+  fs.readFile(pathToData, 'utf-8', (err, data) => {
+    if (err) {
+      console.error('Error al leer el archivo:', err);
+      res.status(500).json({ error: 'Error al leer el archivo' }); 
+      return;
+    }
+
+    try {
+      const users = JSON.parse(data);
+      res.json([users]); 
+    } catch (error) {
+      console.error('Error al parsear el JSON:', error);
+      res.status(500).json({ error: 'Error al parsear el JSON' });
+    }
+  });
+});
+
+app.listen(5000, () => {
+  console.log("Servidor iniciado en el puerto 5000");
+});
