@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './main.css';
-import path from 'path';
+import usersData from '../../userdata.json'; // Importar directamente el JSON
 
 function UserList() {
   const [users, setUsers] = useState([]);
@@ -12,11 +12,7 @@ function UserList() {
       setIsLoading(true);
 
       try {
-        const filePath = path.resolve(__dirname, '../../server/userdata.json');
-        const response = await fetch(filePath);
-        const data = await response.json();
-        console.log('Fetched data:', data);
-        setUsers(data);
+        setUsers(usersData);
       } catch (error) {
         setError(error.message);
         console.error('Error fetching data:', error);
