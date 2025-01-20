@@ -143,12 +143,12 @@ code {
   max-height: 100vh;
   padding: 20px;
   font-family:cursive;
-  background-color:gray;
+  background-color: var(--color-main)
 
 }
 
 .grid-container > * {
-  box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
+  box-shadow: 8px 6px 37px -10px black;
   border-radius: 10px;
   padding: auto;
   text-align: center;
@@ -165,12 +165,17 @@ code {
     "footer footer footer"; 
   grid-template-rows: 100px auto auto 100px 100px; 
   grid-template-columns: repeat(1,2, 1fr); 
+
   .header {
     grid-area: header;
     background-color: transparent;
   }
+  .header{
 
-  .navbar {
+  box-shadow:none !important;
+  }
+
+.navbar {
     grid-area: navbar;
     background-color: #FF4365;
 
