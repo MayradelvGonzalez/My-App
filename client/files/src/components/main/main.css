@@ -9,7 +9,7 @@
     color: aqua;
 }
 #mainInfo {
-    background-color:yellow;
+    background-color:rgb(185, 185, 151);
 }
 .prueba{
     color:black;
@@ -17,12 +17,12 @@
 #listado li{
     list-style: circle;
     list-style-position:inside;
-    background-color: yellow;
+    background-color: rgb(173, 173, 121);
     padding: 8px;
 
 }
 #listado li:nth-child(odd){
-    background-color: aqua;
+    background-color: white;
 }
 #listado ul{
  margin: 10px;

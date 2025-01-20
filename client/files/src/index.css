@@ -1,4 +1,4 @@
-:root{
+ /* :root{
   --color-main: #208132;
   --color-secondary: #1c4911;
   --color-secon : #00fbf2;
@@ -44,14 +44,25 @@ code {
   "header" 200px
   "navbar"
   "main"
-  "sidebar"
+  "sidebar" 
+  "sidebar2" 
   "footer" 100px
   ; 
+
+  grid-template-areas:
+  "header header header"
+  "navbar main sidebar"
+  "navbar main sidebar2"
+
+  "footer footer footer"; 
+
+  
   .header{
     grid-area: header;
     background-color:white;
 
   }
+
   .navbar {
     grid-area: navbar;
     background-color: green;
@@ -60,6 +71,11 @@ code {
     grid-area: sidebar;
     background-color:red;
 
+  }
+  .sidebar2{
+    grid-area: sidebar2;
+    background-color:blue;
+ 
   }
   .main{
     grid-area: main;
@@ -88,4 +104,102 @@ code {
 }
 }
 
+ 
+  */
 
+
+:root {
+  --color-main: #019b98;
+  --color-secondary: #c1ffff;
+  --color-secon: #dd0025;
+  --color-third: #fbfbfb;
+  --color-base: #014e60;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+    /* sans-serif; */
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#caja {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  max-height: 100vh;
+  padding: 20px;
+  font-family:cursive;
+  background-color:gray;
+
+}
+
+.grid-container > * {
+  box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
+  border-radius: 10px;
+  padding: auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "navbar main sidebar"
+    "navbar main sidebar2"
+    "footer footer footer"; 
+  grid-template-rows: 100px auto auto 100px 100px; 
+  grid-template-columns: repeat(1,2, 1fr); 
+  .header {
+    grid-area: header;
+    background-color: transparent;
+  }
+
+  .navbar {
+    grid-area: navbar;
+    background-color: #FF4365;
+
+  }
+
+  .sidebar,
+  .sidebar2 {
+    grid-area: sidebar; 
+    background-color:  #9d00c1 ; 
+    height: 100%; 
+
+  }
+
+  .sidebar2 {
+    grid-area: sidebar2; 
+    background-color: #9d00c1; 
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+  }
+
+  .main {
+    grid-area: main;
+    background-color: var(--color-secon);
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: var(--color-base);
+
+  }
+}

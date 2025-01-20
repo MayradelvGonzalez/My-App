@@ -1,5 +1,5 @@
-{"users": [
-  { 
+
+  [{ 
     "id": 1,
     "name": "Juan Pérez"
   },
@@ -39,4 +39,5 @@
     "id": 10,
     "name": "Elena Moreno"
   }
-]}
+
+  ]

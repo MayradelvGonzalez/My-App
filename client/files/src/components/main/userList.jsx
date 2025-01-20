@@ -12,7 +12,7 @@ function UserList() {
       setIsLoading(true);
 
       try {
-        setUsers(usersData.users);
+        setUsers(usersData);
       } catch (error) {
         setError(error.message);
         console.error('Error fetching data:', error);
