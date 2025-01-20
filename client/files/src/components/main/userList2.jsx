@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './main.css';
-import usersData from '../../userdata.json'; // Importar directamente el JSON
+import usersData2 from '../../userdata2.json'; // Importar directamente el JSON
 
-function UserList() {
-  const [users, setUsers] = useState([]);
+function UserList2() {
+  const [users, setUsers2] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -12,8 +12,7 @@ function UserList() {
       setIsLoading(true);
 
       try {
-        setUsers(usersData);
-        console.log('Data fetched:', usersData);
+        setUsers2(usersData2);
       } catch (error) {
         setError(error.message);
         console.error('Error fetching data:', error);
@@ -28,7 +27,7 @@ function UserList() {
   return (
   
     <div id='listado'>
-      <h1>Alumnos 5°</h1>
+      <h1>Alumnos 6°</h1>
       {isLoading ? (
         <p>Cargando datos de usuarios...</p>
       ) : error ? (
@@ -48,4 +47,4 @@ function UserList() {
    );
 }
 
-export default UserList;
+export default UserList2;
