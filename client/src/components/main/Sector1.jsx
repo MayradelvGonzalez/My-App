@@ -46,13 +46,13 @@ import React from 'react';
 import './main.css';
 import UserList from './userList';
 
-function Main({ users }) {
+function Sector1({ users }) {
   return (
     <div className="main-container">
-      {/* Otros componentes como Header, Navbar, etc. */}
+
       <UserList users={users} />
     </div>
   );
 }
 
-export default Main;
+export default Sector1;

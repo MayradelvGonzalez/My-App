@@ -37,8 +37,9 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Sidebar2 from './components/sidebar2/Sidebar2';
-import Main from './components/main/Main';
+import Main from './components/main/Main.jsx';
 import UserList from './components/main/userList'; 
+import Sector1 from './components/main/Sector1'; 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Sector2 from './components/sector2/Sector2'; // Import the Sector2 component
@@ -59,6 +60,7 @@ function App() {
             <Routes>
             <Route path="/" element={<Main />} /> 
               <Route path="/sector2" element={<Sector2 />} /> 
+              <Route path="/sector1" element={<Sector1 />} /> 
             </Routes>
           </main>
           <footer className="footer"><Footer /></footer>
