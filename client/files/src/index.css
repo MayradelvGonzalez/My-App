@@ -143,12 +143,12 @@ code {
   max-height: 100vh;
   padding: 20px;
   font-family:cursive;
-  background-color: var(--color-main)
+  background-color: rgb(136, 136, 136);
 
 }
 
 .grid-container > * {
-  box-shadow: 8px 6px 37px -10px black;
+  box-shadow: 9px 6px 37px -10px black;
   border-radius: 10px;
   padding: auto;
   text-align: center;
@@ -159,12 +159,12 @@ code {
   display: grid;
   gap: 20px;
   grid-template-areas:
-    "header header header"
-    "navbar main sidebar"
-    "navbar main sidebar2"
-    "footer footer footer"; 
+    "header header header header"
+    "navbar main main sidebar"
+    "navbar main main sidebar2"
+    "footer footer footer footer"; 
   grid-template-rows: 100px auto auto 100px 100px; 
-  grid-template-columns: repeat(1,2, 1fr); 
+  grid-template-columns: repeat(1,3,1fr); 
 
   .header {
     grid-area: header;
@@ -199,7 +199,7 @@ code {
 
   .main {
     grid-area: main;
-    background-color: var(--color-secon);
+    background-color: var(--color-secondary);
   }
 
   .footer {
