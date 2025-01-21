@@ -1,12 +1,14 @@
 import React from 'react';
+import Carrousel from '../carrousel/Carrousel.jsx';
 
 
 function Main(){
     return (
-        <>
+        <div className="mainestilo">
         <h1>Sección Principal</h1>
-        <h3>Aqui agregare un carroousel de imagenes o algo asi</h3>
-        </>
+   {/* <Carrousel /> */}
+   </div>
+        
     )
 }
 

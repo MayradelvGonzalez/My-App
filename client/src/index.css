@@ -327,30 +327,26 @@ code {
   gap:10px;
 }
 
-@media screen and (min-width: 375px) { 
+@media screen and (max-width: 600px) { 
   /* Aplicar cambios solo en pantallas más pequeñas */
   .grid-container {
     display: grid;
     grid-template-columns: 1fr; 
+    gap: 20px;
     grid-template-areas:
       "header" 
       "header"
       "main" 
       "navbar" 
-   
       "sidebar"
       "sidebar2" 
-      "footer";
-      gap:20px;
+      "footer"
+    
+  
       
-  }
+  }}
 
-  .footer {
-    grid-area: footer;
 
-    margin-bottom: 20px; /* Ajusta el valor según tu preferencia */
-  }
-}
 
    /* .header {
     grid-area: header;

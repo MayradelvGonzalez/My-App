@@ -31,7 +31,7 @@
 import React from 'react';
 import './header.css';
 import imagen from '../../img/MENTAGIF.gif';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
   const navigate = useNavigate();
