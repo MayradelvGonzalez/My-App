@@ -50,10 +50,10 @@ import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Sidebar2 from './components/sidebar2/Sidebar2';
 import Main from './components/main/Main.jsx'; 
-import UserList from './components/main/userList'; 
+// import UserList from './components/main/userList'; 
 import Sector1 from './components/main/Sector1'; 
 import Sector2 from './components/sector2/Sector2';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 
 function App() {

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 .info{
     background-color: antiquewhite;
     color: aqua;
@@ -18,17 +19,17 @@
     list-style: circle;
     list-style-position:inside;
     background-color: rgb(173, 173, 121);
-    padding: 8px;
-
+    padding: 6px;
+height: fit-content;
 }
 #listado li:nth-child(odd){
     background-color: white;
 }
-#listado ul{
+/* #listado ul{
  margin: 10px;
-}
+} */
 
 
 .mainestilo {
-    height: 60vh;
+    height: max-content;
 }
