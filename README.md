@@ -1,3 +1,3 @@
 # App
-💖App built with React jS, Materialize css
+💖App built with React jS and Bootstrap
 
