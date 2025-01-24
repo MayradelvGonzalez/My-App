@@ -29,13 +29,12 @@ code {
 
 #caja {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  max-height: fit-content;
+  font-size: 0.8rem;
   padding: 10px;
   font-family:cursive;
   background-color: rgb(136, 136, 136);
+} 
 
-}
 
 .grid-container > * {
   display: grid;
@@ -55,8 +54,9 @@ code {
     "navbar main main sidebar"
     "navbar main main sidebar2"
     "footer footer footer footer"; 
-  grid-template-rows: 100px auto auto 100px 100px; 
+  grid-template-rows: auto auto auto auto; 
   grid-template-columns: repeat(1,3,1fr); 
+  min-height: 100vh;
   /* grid-template-rows: repeat(4, auto); */
   .header {
     grid-area: header;

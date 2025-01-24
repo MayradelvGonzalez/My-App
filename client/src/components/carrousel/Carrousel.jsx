@@ -56,7 +56,7 @@ import './Carrousel.css';
 
 function Carrousel() {
   return (
-    <div>
+    <div className="carrousel">
     <Carousel>
     <Carousel.Item>
       <img style={{height:'60vh', objectFit:'cover'}}
