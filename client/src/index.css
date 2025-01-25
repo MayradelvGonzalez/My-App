@@ -70,8 +70,10 @@ code {
 .navbar {
     grid-area: navbar;
     background-color: #FF4365;
-      
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .sidebar,
@@ -103,10 +105,14 @@ code {
   }
 
 
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
 
 
 
-  /* @media (max-width:600px){
+   /* @media (max-width:600px){
     grid-template: 
     "header navbar" 50px
     "header navbar" 50px
@@ -114,8 +120,8 @@ code {
     "footer footer" 100px/
     200px auto
     ; 
-}
-@media (min-width:390px){
+} */
+/* @media (min-width:390px){
   grid-template: 
   "header" 50px
   "navbar" 50px
@@ -124,29 +130,29 @@ code {
   "footer" auto
 
   ;
-} */
-/* }
+} 
+ } */
 
-:root {
+/* :root {
   --color-main: #019b98;
   --color-secondary: #c1ffff;
   --color-secon: #dd0025;
   --color-third: #fbfbfb;
   --color-base: #014e60;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -161,10 +167,10 @@ code {
   background-color: rgb(136, 136, 136);
   display: grid;
   grid-template-rows: 100px auto auto 100px 100px; /* Mantener alturas de filas fijas */
-  grid-template-columns: repeat(4, 1fr); /* Mantener 4 columnas de igual tamaño */
-}
-
-.grid-container {
+  /* grid-template-columns: repeat(4, 1fr);  Mantener 4 columnas de igual tamaño  */
+ /* }  */
+/* }  */
+ /* .grid-container {
   display: grid;
   gap: 20px;
   grid-template-areas:
@@ -173,13 +179,13 @@ code {
     "navbar main main sidebar2"
     "footer footer footer footer";
 
-  .header {
-    grid-area: header;
+  .header { 
+     grid-area: header;
     background-color: transparent;
-    box-shadow: none !important;
-  }
+    box-shadow: none !important; 
+  } */ 
 
-  .navbar {
+  /* .navbar {
     grid-area: navbar;
     background-color: #FF4365;
   }
@@ -189,9 +195,9 @@ code {
     grid-area: sidebar; 
     background-color: #9d00c1; 
     height: 100%; 
-  }
+  }  */
 
-  .sidebar2 {
+   /* .sidebar2 {
     grid-area: sidebar2; 
     background-color: #9d00c1; 
     grid-row-start: 3;
@@ -201,26 +207,26 @@ code {
   .main {
     grid-area: main;
     background-color: var(--color-secondary);
-  }
+  } */
 
-  .footer {
-    grid-area: footer;
+  /* .footer { 
+     grid-area: footer;
     background-color: var(--color-base);
   }
 }
 
-.grid-container > * {
-  box-shadow: 9px 6px 37px -10px black;
+.grid-container > * { 
+   box-shadow: 9px 6px 37px -10px black;
   border-radius: 10px;
   padding: auto;
   text-align: center;
   font-weight: 500;
   gap:10px;
-}
+}  
 
-@media screen and (max-width: 600px) { 
+ @media screen and (max-width: 600px) {  */
   /* Aplicar cambios solo en pantallas más pequeñas */
-  .grid-container {
+  /* .grid-container {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
@@ -235,7 +241,7 @@ code {
     
   
       
-  }}
+  }}  */
 
 
 
@@ -255,7 +261,4 @@ code {
     width: 100%;
   } 
 
-
-
-
-/* } */
+  /* } */

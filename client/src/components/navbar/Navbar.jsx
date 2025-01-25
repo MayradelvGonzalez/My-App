@@ -3,10 +3,10 @@ import './navbar.css';
 
 function Navbar(){
     return( 
-        <div id="nav">
+<div className="Navbar">
     <h2>Sección</h2>
     <p>Informacion general actualizada sobre las clases</p>
-        </div>
+    </div>
 
     )
     
