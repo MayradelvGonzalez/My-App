@@ -81,14 +81,16 @@ code {
     grid-area: sidebar; 
     background-color:  #9d00c1 ; 
     height: 100%; 
+    
+padding: 0.5em;
 
   }
 
   .sidebar2 {
     grid-area: sidebar2; 
     background-color: #9d00c1; 
-    grid-row-start: 3;
-    grid-row-end: 4;
+     /* grid-row-start: 3;
+    grid-row-end: 4;  */
 
   }
 
@@ -100,8 +102,9 @@ code {
   .footer {
     grid-area: footer;
     background-color: var(--color-base);
-
-  
+ height: fit-content;
+  padding: 1em;
+  margin-bottom: 0;
   }
 
 
