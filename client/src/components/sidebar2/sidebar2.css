@@ -1,0 +1,24 @@
+.contenido {
+    min-width: fit-content; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    }  
+
+    .listadoInfo{
+        font-size: 1.2em;
+        color: white;
+      
+    }
+ 
+
+    .listadoInfo li{
+        list-style-type:square;
+  
+    }
+
+    .listadoInfo a{
+        text-decoration: none;
+        color: yellow;
+    }

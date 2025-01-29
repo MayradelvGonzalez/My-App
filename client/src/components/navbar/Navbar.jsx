@@ -4,7 +4,7 @@ import './navbar.css';
 function Navbar(){
     return( 
 <div className="Navbar">
-    <h2>Sección</h2>
+    <h2><u>Información general</u></h2>
     <p>Informacion general actualizada sobre las clases</p>
     </div>
 

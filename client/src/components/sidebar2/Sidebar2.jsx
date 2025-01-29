@@ -1,14 +1,19 @@
 import React from "react";
-import './sidebar.css';
+import './sidebar2.css';
 function Sidebar2(){
 return (
 
 <div className="Sidebar2">
 
-    <h2>Sección</h2>
+    <h4><u> Tareas y juegos opcionales</u></h4>
     <div className="contenido">
-    <p>tareas opcionales, info extra</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id qui, illo blanditiis velit saepe mollitia similique atque, et, iusto labore quia accusamus deserunt ducimus.</p>
+
+    <ul className="listadoInfo">
+        <li>Las notas musicales <a href="https://www.musicca.com/es/ejercicios/circulo/1" target="_blank">Ir a la actividad 🎹</a></li>
+        <li>Práctica de ritmos : <a target="_blank" href="https://aprendomusica.com/const2/04dictadoRitmico/game.html">Ir a la actividad 🪇</a></li>
+        <li></li>
+    </ul>
+   
    
     </div> </div>
 )}
