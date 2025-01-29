@@ -1,11 +1,18 @@
 import React from "react";
 import './navbar.css';
+import { useGrade } from '../../context/GradeContext';
+
 
 function Navbar(){
+    const { grade } = useGrade();
     return( 
 <div className="Navbar">
-    <h2><u>Información general</u></h2>
-    <p>Informacion general actualizada sobre las clases</p>
+{grade === '5' ? (
+          <p>Info para quinto</p>
+        ) : (
+          <p>Info para sexto</p>
+        )}
+        <p>Otra sección</p>
     </div>
 
     )
