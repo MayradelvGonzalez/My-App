@@ -1,5 +1,6 @@
 .contenido {
-    min-width: fit-content; 
+    /* min-width: fit-content;  */
+    width: 40em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,6 +10,7 @@
     .listadoInfo{
         font-size: 1.2em;
         color: white;
+        
       
     }
  

@@ -34,7 +34,7 @@ function Navbar(){
             case '6':
                 return <p>Info para sexto</p>;
             case 'home':
-                return <p>Bienvenido a Home</p>;  // Información para la página Home
+                return <h1>Bienvenidos <br /> 🎹🪇🕹️🎙️📒🤖👩‍🏫</h1>;  // Información para la página Home
             default:
                 return <p>Selecciona un curso</p>; // Mensaje por defecto
         }
@@ -43,7 +43,7 @@ function Navbar(){
     return( 
         <div className="Navbar">
             {getInfoForGrade(grade)} {/* Llama a la función para obtener la info */}
-            <p>Otra sección</p> 
+  
         </div>
     );
 }
