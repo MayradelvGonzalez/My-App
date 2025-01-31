@@ -8,12 +8,7 @@
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
-    /* sans-serif; */
-    /* display: flex;
-    flex-direction: column;
-    min-height: 100vh; */
+
  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,7 +57,6 @@ code {
   min-height: 100vh;
 
 
-  /* grid-template-rows: repeat(4, auto); */
   .header {
     grid-area: header;
     background-color: transparent;
@@ -96,8 +90,7 @@ padding: 0.5em;
   .sidebar2 {
     grid-area: sidebar2; 
     background-color: #c954da; 
-     /* grid-row-start: 3;
-    grid-row-end: 4;  */
+
 
   }
 
@@ -115,159 +108,73 @@ padding: 0.5em;
 
 
 }
+ 
 
 
-/* ----------------------------------------------------------------------------------------- */
+/* ... otros estilos ... */
 
-
-
-   /* @media (max-width:600px){
-    grid-template: 
-    "header navbar" 50px
-    "header navbar" 50px
-    "sidebar main" auto
-    "footer footer" 100px/
-    200px auto
-    ; 
-} */
-/* @media (min-width:390px){
-  grid-template: 
-  "header" 50px
-  "navbar" 50px
-   "main" 50px
-   "sidebar" 50px
-  "footer" auto
-
-  ;
-} 
- } */
-
-/* :root {
-  --color-main: #019b98;
-  --color-secondary: #c1ffff;
-  --color-secon: #dd0025;
-  --color-third: #fbfbfb;
-  --color-base: #014e60;
-} */
-
-/* body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-#caja {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  max-height: 100vh;
-  padding: 20px;
-  font-family: cursive;
-  background-color: rgb(136, 136, 136);
-  display: grid;
-  grid-template-rows: 100px auto auto 100px 100px; /* Mantener alturas de filas fijas */
-  /* grid-template-columns: repeat(4, 1fr);  Mantener 4 columnas de igual tamaño  */
- /* }  */
-/* }  */
- /* .grid-container {
-  display: grid;
-  gap: 20px;
-  grid-template-areas:
-    "header header header header"
-    "navbar main main sidebar"
-    "navbar main main sidebar2"
-    "footer footer footer footer";
-
-  .header { 
-     grid-area: header;
-    background-color: transparent;
-    box-shadow: none !important; 
-  } */ 
-
-  /* .navbar {
-    grid-area: navbar;
-    background-color: #FF4365;
-  }
-
-  .sidebar,
-  .sidebar2 {
-    grid-area: sidebar; 
-    background-color: #9d00c1; 
-    height: 100%; 
-  }  */
-
-   /* .sidebar2 {
-    grid-area: sidebar2; 
-    background-color: #9d00c1; 
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .main {
-    grid-area: main;
-    background-color: var(--color-secondary);
-  } */
-
-  /* .footer { 
-     grid-area: footer;
-    background-color: var(--color-base);
-  }
-}
-
-.grid-container > * { 
-   box-shadow: 9px 6px 37px -10px black;
-  border-radius: 10px;
-  padding: auto;
-  text-align: center;
-  font-weight: 500;
-  gap:10px;
-}  
-
- @media screen and (max-width: 600px) {  */
-  /* Aplicar cambios solo en pantallas más pequeñas */
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px;
+@media (max-width: 767px) { /* Media query para móviles (general) */
+  .grid-container {
     grid-template-areas:
-      "header" 
       "header"
-      "main" 
-      "navbar" 
+      "navbar"
+      "main"
       "sidebar"
-      "sidebar2" 
-      "footer"
-    
-  
-      
-  }}  */
-
-
-
-   /* .header {
-    grid-area: header;
-    height: auto;
-    width: 100%;
+      "sidebar2"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  button {
-    width: 50%;
-    height: fit-content;
-  }
-  
-  .main {
-    grid-area: main;
-    height: auto;
-    width: 100%;
-  } 
 
-  /* } */
+  .grid-container > * {
+    font-size: 1rem; /* Ajusta según necesites */
+    padding: 15px; /* Ajusta según necesites */
+  }
+
+  .grid-container .navbar {
+    flex-direction: column;
+    width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .grid-container .main-container { /* Estilos específicos para los contenedores de Sector1 y Sector2 */
+    width: 100%; /* Ocupa todo el ancho del 'main' */
+    padding: 10px; /* Ajusta el padding si es necesario */
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+  }
+
+  .alumnos { /* Estilos específicos para el div con clase 'alumnos' en Sector1 */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .grid-container .sidebar2 {
+    display: none; /* Ocultar en móviles si lo deseas */
+  }
+}
+
+
+/* Media query para pantallas de 640x480 (específica) -  AJUSTA LOS VALORES SI ES NECESARIO */
+@media (width: 640px) and (height: 480px) {
+  .grid-container {
+    /* ... (los mismos estilos que en la media query general para móviles) ... */
+    gap: 5px; /* Puedes ajustar el gap para esta resolución específica */
+  }
+
+  .grid-container > * {
+    font-size: 0.9rem; /* Puedes ajustar el tamaño de fuente para esta resolución */
+    padding: 10px; /* Puedes ajustar el padding para esta resolución */
+  }
+
+    .grid-container .main-container { /* Estilos específicos para los contenedores de Sector1 y Sector2 */
+    width: 100%; /* Ocupa todo el ancho del 'main' */
+    padding: 10px; /* Ajusta el padding si es necesario */
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+  }
+
+  .alumnos { /* Estilos específicos para el div con clase 'alumnos' en Sector1 */
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* ... otros estilos ... */
