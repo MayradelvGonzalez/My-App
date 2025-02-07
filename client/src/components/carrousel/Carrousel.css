@@ -7,7 +7,7 @@
 .carrousel{
 background-color: green;
 /* border:0.5em dashed yellow; */
-height: 60vh;
+height: fit-content;
 overflow: hidden;
 
 }

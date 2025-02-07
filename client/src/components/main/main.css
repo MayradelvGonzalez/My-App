@@ -22,7 +22,7 @@
     list-style: circle;
     list-style-position:inside;
     background-color: rgb(173, 173, 121);
-    padding: 6px;
+    /* padding: 6px; */
     height: fit-content;
     width: 100%;
     /* margin: 1px 0; */
@@ -35,19 +35,19 @@
 #listado{
     display: flex;
     flex-direction: column; /* Si la lista es vertical */
-    justify-content:space-around;
+    justify-content:center;
 width: 100%;
 
 
 }
 .main-container{
-    width: 60em;
+    width: 30em;
     
 
 }
 .alumnos {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     
 }
