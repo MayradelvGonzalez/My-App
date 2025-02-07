@@ -3,7 +3,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import imagen from '../carrousel/imagen.avif'; 
-import imagen1 from '../carrousel/imagen1.avif';
+// import imagen1 from '../carrousel/imagen1.avif';
 import imagen2 from '../carrousel/imagen2.avif';
 import './Carrousel.css';
 

@@ -9,8 +9,8 @@ return (
     <div className="contenido">
 
     <ul className="listadoInfo">
-        <li>Las notas musicales <a href="https://www.musicca.com/es/ejercicios/circulo/1" target="_blank">Ir a la actividad 🎹</a></li>
-        <li>Práctica de ritmos : <a target="_blank" href="https://aprendomusica.com/const2/04dictadoRitmico/game.html">Ir a la actividad 🪇</a></li>
+        <li>Las notas musicales <a href="https://www.musicca.com/es/ejercicios/circulo/1" target="_blank" rel="noreferrer" >Ir a la actividad 🎹</a></li>
+        <li>Práctica de ritmos : <a target="_blank" rel="noreferrer" href="https://aprendomusica.com/const2/04dictadoRitmico/game.html">Ir a la actividad 🪇</a></li>
         <li></li>
     </ul>
    
