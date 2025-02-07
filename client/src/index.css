@@ -111,9 +111,9 @@ padding: 0.5em;
  
 
 
-/* ... otros estilos ... */
 
-@media (max-width: 767px) { /* Media query para móviles (general) */
+
+@media (max-width: 767px) { 
   .grid-container {
     grid-template-areas:
       "header"
@@ -127,54 +127,52 @@ padding: 0.5em;
   }
 
   .grid-container > * {
-    font-size: 1rem; /* Ajusta según necesites */
-    padding: 15px; /* Ajusta según necesites */
+    font-size: 1rem; 
+    padding: 15px; 
   }
 
   .grid-container .navbar {
     flex-direction: column;
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%; 
   }
 
-  .grid-container .main-container { /* Estilos específicos para los contenedores de Sector1 y Sector2 */
-    width: 100%; /* Ocupa todo el ancho del 'main' */
-    padding: 10px; /* Ajusta el padding si es necesario */
-    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+  .grid-container .main-container { 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
   }
 
-  .alumnos { /* Estilos específicos para el div con clase 'alumnos' en Sector1 */
+  .alumnos { 
     width: 100%;
     box-sizing: border-box;
   }
 
-  .grid-container .sidebar2 {
-    display: none; /* Ocultar en móviles si lo deseas */
-  }
+  /* .grid-container .sidebar2 {
+    display: none; 
+  } */
 }
 
 
-/* Media query para pantallas de 640x480 (específica) -  AJUSTA LOS VALORES SI ES NECESARIO */
+
 @media (width: 640px) and (height: 480px) {
   .grid-container {
-    /* ... (los mismos estilos que en la media query general para móviles) ... */
-    gap: 5px; /* Puedes ajustar el gap para esta resolución específica */
+    gap: 5px; 
   }
 
   .grid-container > * {
-    font-size: 0.9rem; /* Puedes ajustar el tamaño de fuente para esta resolución */
-    padding: 10px; /* Puedes ajustar el padding para esta resolución */
+    font-size: 0.9rem; 
+    padding: 10px; 
   }
 
-    .grid-container .main-container { /* Estilos específicos para los contenedores de Sector1 y Sector2 */
-    width: 100%; /* Ocupa todo el ancho del 'main' */
-    padding: 10px; /* Ajusta el padding si es necesario */
-    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+    .grid-container .main-container { 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
   }
 
-  .alumnos { /* Estilos específicos para el div con clase 'alumnos' en Sector1 */
+  .alumnos { 
     width: 100%;
     box-sizing: border-box;
   }
 }
 
-/* ... otros estilos ... */
