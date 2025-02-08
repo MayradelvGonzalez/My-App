@@ -41,17 +41,17 @@
 
 import React, { useState } from 'react';
 import './index.css';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Sidebar from './components/sidebar/Sidebar';
-import Sidebar2 from './components/sidebar2/Sidebar2';
+import Navbar from './components/navbar/Navbar.jsx';
+import Footer from './components/footer/Footer.jsx';
+import Header from './components/header/Header.jsx';
+import Sidebar from './components/sidebar/Sidebar.jsx';
+import Sidebar2 from './components/sidebar2/Sidebar2.jsx';
 import Main from './components/main/Main.jsx'; 
-import Sector1 from './components/main/Sector1'; 
-import Sector2 from './components/sector2/Sector2';
+import Sector1 from './components/main/Sector1.jsx'; 
+import Sector2 from './components/sector2/Sector2.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
-import GradeContext from './context/GradeContext'; // Import GradeContext here
+import GradeContext from './context/GradeContext.jsx'; // Import GradeContext here
 
 function App() {
   const [grade, setGrade] = useState('home'); // Estado inicial: 'home'

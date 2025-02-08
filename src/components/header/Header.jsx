@@ -4,7 +4,7 @@ import React from 'react';
 import './header.css';
 import imagen from '../../img/MENTAGIF.gif';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useGrade } from './../../context/GradeContext'; // Importar el hook y la función setGrade
+import { useGrade } from '../../context/GradeContext'; // Importar el hook y la función setGrade
 
 function Header() {
   const navigate = useNavigate();
