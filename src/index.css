@@ -114,6 +114,7 @@ padding: 0.5em;
 
 
 @media (max-width: 767px) { 
+
   .grid-container {
     grid-template-areas:
       "header"
@@ -124,6 +125,7 @@ padding: 0.5em;
       "footer";
     grid-template-columns: 1fr;
     gap: 10px;
+    
   }
 
   .grid-container > * {
@@ -146,7 +148,9 @@ padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
   }
-
+#caja{
+  width: fit-content;
+}
 
 }
 
