@@ -40,13 +40,13 @@
 
 }
 .main-container{
-    width: 30em;
+    width: 37em;
     
 
 }
 .alumnos {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
 }
 

@@ -97,15 +97,21 @@ padding: 0.5em;
   .main {
     grid-area: main;
     background-color: var(--color-secondary);
+    width: 98%;
+    min-height: calc(100vh - 250px);
   }
 
   .footer {
     grid-area: footer;
     background-color: var(--color-base);
     padding: 1em;
-
+    height: 100px; /* Altura fija en píxeles */
+    display: flex;
+    justify-content: center;
   }
-
+.alumnos{
+  width: 90%;
+}
 
 }
  
