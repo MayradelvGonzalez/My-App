@@ -1,6 +1,6 @@
 .contenido {
     /* min-width: fit-content;  */
-    width: 40em;
+    width: 38em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -10,17 +10,20 @@
     .listadoInfo{
         font-size: 1.2em;
         color: white;
-        
-      
+   
     }
  
 
     .listadoInfo li{
         list-style-type:square;
-  
-    }
+width: 50%;
+align-items:center;
+}
 
     .listadoInfo a{
         text-decoration: none;
         color: yellow;
+    }
+    .Sidebar2{
+   width: 53%;
     }

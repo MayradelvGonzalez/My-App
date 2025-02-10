@@ -156,63 +156,66 @@ padding: 0.5em;
 
 
 
-@media (max-width: 640px) and (max-height: 480px) {
+@media (width: 360px) and (height: 740px) {
+  body {
+    font-size: 14px;
+    height: auto;
+  }
+  .contenedor {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .elemento {
+    padding: 10px;
+  }
+  
   .grid-container {
-    gap: 5px; 
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main"
+      "sidebar"
+      "sidebar2"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+  }
+  .main{
+    width: 54%;
+  }
+ footer, .sidebar, .sidebar2, .Sector1,.sector2{
+  width: 54%;
+
+
+}  
+header{
+  width: 75%;
+  display: flex;
+}
+.grid-container > * {
+    font-size: 1rem; 
+    padding: 15px; 
   }
 
-  .grid-container > * {
-    font-size: 0.9rem; 
-    padding: 10px; 
+  .grid-container .navbar {
+    flex-direction: column;
+    width: 54%; 
   }
 
-    .grid-container .main-container { 
+  .grid-container .main-container { 
     width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
+padding-right: 2em;
   }
 
   .alumnos { 
     width: 100%;
     box-sizing: border-box;
+  
   }
 
-  @media (max-width: 400px) {
-    .grid-container {
-      grid-template-areas:
-        "header"
-        "navbar"
-        "main"
-        "sidebar"
-        "sidebar2"
-        "footer";
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto auto;
-      gap: 10px;
-    }
-  
-    .navbar {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      padding: 1em;
-    }
-  
-    .navbar > * {
-      margin: 0 0.5em;
-    }
-  
-    .sidebar,
-    .sidebar2 {
-      height: auto;
-      padding: 1em;
-    }
-  
-    .main {
-      /* Estilos específicos para el contenido principal en pantallas pequeñas */
-      padding: 1em; /* Ajusta el padding si es necesario */
-    }
-  
+#caja{
+  width: fit-content;
 }
 
 }

@@ -6,12 +6,12 @@ return (
 <div className="Sidebar2">
 
     <h4><u> Tareas y juegos opcionales</u></h4>
-    <div className="contenido">
 
+    <div className="contenido">
     <ul className="listadoInfo">
         <li>Las notas musicales <a href="https://www.musicca.com/es/ejercicios/circulo/1" target="_blank" rel="noreferrer" >Ir a la actividad 🎹</a></li>
         <li>Práctica de ritmos : <a target="_blank" rel="noreferrer" href="https://aprendomusica.com/const2/04dictadoRitmico/game.html">Ir a la actividad 🪇</a></li>
-        <li></li>
+        
     </ul>
    
    
