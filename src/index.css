@@ -176,5 +176,43 @@ padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
   }
+
+  @media (max-width: 400px) {
+    .grid-container {
+      grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "sidebar2"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      gap: 10px;
+    }
+  
+    .navbar {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1em;
+    }
+  
+    .navbar > * {
+      margin: 0 0.5em;
+    }
+  
+    .sidebar,
+    .sidebar2 {
+      height: auto;
+      padding: 1em;
+    }
+  
+    .main {
+      /* Estilos específicos para el contenido principal en pantallas pequeñas */
+      padding: 1em; /* Ajusta el padding si es necesario */
+    }
+  
 }
 
+}

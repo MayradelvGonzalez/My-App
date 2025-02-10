@@ -41,7 +41,7 @@ function Carrousel() {
       <img 
      style={{ objectFit: 'contain' }} 
      className="d-block w-100" 
-     src={imagen2} 
+     src={imagen} 
      alt="First slide" 
       />
 
