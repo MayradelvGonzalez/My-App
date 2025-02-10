@@ -14,16 +14,3 @@
     }
  
 
-    .listadoInfo li{
-        list-style-type:square;
-width: 50%;
-align-items:center;
-}
-
-    .listadoInfo a{
-        text-decoration: none;
-        color: yellow;
-    }
-    .Sidebar2{
-   width: 53%;
-    }

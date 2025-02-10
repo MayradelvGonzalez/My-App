@@ -162,7 +162,7 @@ padding: 0.5em;
     height: auto;
   }
   .contenedor {
-    width: 90%;
+    width: 80%;
     margin: 10px auto;
   }
   .elemento {
@@ -182,17 +182,18 @@ padding: 0.5em;
     
   }
   .main{
-    width: 54%;
+    width: 45%;
   }
  footer, .sidebar, .sidebar2, .Sector1,.sector2{
-  width: 54%;
+  width: 45%;
 
 
 }  
 header{
-  width: 75%;
+  width: 65%;
   display: flex;
 }
+
 .grid-container > * {
     font-size: 1rem; 
     padding: 15px; 
@@ -200,7 +201,7 @@ header{
 
   .grid-container .navbar {
     flex-direction: column;
-    width: 54%; 
+    width: 45%; 
   }
 
   .grid-container .main-container { 
@@ -216,6 +217,24 @@ padding-right: 2em;
 
 #caja{
   width: fit-content;
+
+}
+.contenido .listadoInfo{
+  padding-right: 6em;
+  padding-left: auto;
+}
+.listadoInfo li{
+  list-style-type:square;
+width: 50%;
+align-items:center;
+}
+
+.listadoInfo a{
+  text-decoration: none;
+  color: yellow;
+}
+.Sidebar2{
+width: 45%;
 }
 
 }
