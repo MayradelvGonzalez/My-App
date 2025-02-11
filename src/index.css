@@ -15,8 +15,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 * {
@@ -29,7 +29,7 @@ code {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   padding: 10px;
-  font-family:cursive;
+  font-family:'Times New Roman', Times, serif;
   background-color: rgb(136, 136, 136);
 } 
 
@@ -93,6 +93,12 @@ padding: 0.5em;
 
 
   }
+.Sidebar2 h1 u{
+  display: flex;
+justify-content: center;
+align-items:center;
+align-content:center;
+}
 
   .main {
     grid-area: main;
@@ -104,8 +110,8 @@ padding: 0.5em;
   .footer {
     grid-area: footer;
     background-color: var(--color-base);
-    padding: 1em;
-    height: 100px; /* Altura fija en píxeles */
+    padding: 0.5em;
+    height: fit-content; /* Altura fija en píxeles */
     display: flex;
     justify-content: center;
   }
@@ -165,15 +171,15 @@ padding: 0.5em;
 @media (width: 360px) and (height: 740px) {
   body {
     font-size: 14px;
-    height: auto;
+    height: fit-content;
+    background-color: gray;
+
   }
   .contenedor {
     width: 80%;
     margin: 10px auto;
   }
-  .elemento {
-    padding: 10px;
-  }
+
   
   .grid-container {
     grid-template-areas:
@@ -188,15 +194,28 @@ padding: 0.5em;
     
   }
   .main{
-    width: 45%;
+    max-width: 55%;
+    
   }
  footer, .sidebar, .sidebar2, .Sector1,.sector2{
-  width: 45%;
+  width: 55%;
+  font-family: "Merienda", serif;
+  font-optical-sizing: auto;
 
+  font-style: normal;
 
 }  
+
+Footer{
+  margin-bottom: 0.5em;
+  font-family: "Merienda", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
 header{
-  width: 65%;
+  width: 75%;
   display: flex;
 }
 
@@ -207,23 +226,26 @@ header{
 
   .grid-container .navbar {
     flex-direction: column;
-    width: 45%; 
+    width: 55%; 
   }
 
   .grid-container .main-container { 
-    width: 100%; 
-padding-right: 2em;
+    width: 60%; 
+/* padding-right: 2em; */
+  }
+  .main-container{
+    min-width: 99%;
   }
 
   .alumnos { 
-    width: 100%;
+    width: fit-content;
     box-sizing: border-box;
-  
+
   }
 
 #caja{
   width: fit-content;
-
+padding-bottom: 5em;
 }
 .contenido .listadoInfo{
   padding-right: 6em;
@@ -233,14 +255,64 @@ padding-right: 2em;
   list-style-type:square;
 width: 50%;
 align-items:center;
+font-size: 0.8em;
 }
 
 .listadoInfo a{
-  text-decoration: none;
-  color: yellow;
+  text-decoration:underline;
+  text-decoration-color: white;
+  text-decoration-style: double;
+  
 }
+
 .Sidebar2{
 width: 45%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
 }
+
+
+}
+
+@media (max-width: 500px) and (max-height: 900px) { /* Rango aproximado */
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main"
+      "sidebar"
+      "sidebar2"
+      "footer";
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 10px; /* Espacio más pequeño entre elementos */
+  }
+
+  .navbar {
+    width: 100%;
+    flex-direction: column; /* Asegura que los elementos del navbar se apilen verticalmente */
+  }
+
+  .sidebar, .sidebar2 {
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .main {
+    min-height: auto; /* Altura automática para el contenido principal */
+  }
+
+  .footer {
+    height: auto; /* Altura automática para el footer */
+  }
+
+  .grid-container > * {
+    box-shadow: 3px 2px 10px -3px black; /* Sombra más sutil */
+    padding: 10px; /* Padding reducido */
+  }
+
+  #caja {
+    font-size: 0.7rem; /* Tamaño de fuente más pequeño */
+  }
 
 }

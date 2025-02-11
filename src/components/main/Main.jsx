@@ -1,11 +1,11 @@
 import React from 'react';
 import Carrousel from '../carrousel/Carrousel';
-
+import '../carrousel/Carrousel.css';
 
 function Main(){
     return (
         <div className="mainestilo">
-            <h1>Este es un carrusel</h1>
+            <p>Aprender Música es divertida!</p>
     <Carrousel /> 
    </div>
         

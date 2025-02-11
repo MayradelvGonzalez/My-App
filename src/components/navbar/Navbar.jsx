@@ -1,25 +1,4 @@
-// import React from "react";
-// import './navbar.css';
-// import { useGrade } from '../../context/GradeContext';
 
-
-// function Navbar(){
-//     const { grade } = useGrade();
-//     return( 
-// <div className="Navbar">
-// {grade === '5' ? (
-//           <p>Info para quinto</p>
-//         ) : (
-//           <p>Info para sexto</p>
-//         )}
-//         <p>Otra sección</p>
-//     </div>
-
-//     )
-    
-// }
-
-// export default Navbar;
 import React from "react";
 import './navbar.css';
 import { useGrade } from '../../context/GradeContext';
@@ -34,7 +13,7 @@ function Navbar(){
             case '6':
                 return <p>Info para sexto</p>;
             case 'home':
-                return <h1>Bienvenidos <br /> 🎹🪇🕹️🎙️📒🤖👩‍🏫</h1>;  // Información para la página Home
+                return <h1>BIENVENIDOS <br /> 🎹🪇🕹️🎙️📒🤖👩‍🏫</h1>;  // Información para la página Home
             default:
                 return <p>Selecciona un curso</p>; // Mensaje por defecto
         }

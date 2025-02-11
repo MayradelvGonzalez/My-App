@@ -39,11 +39,11 @@ function Header() {
           <h2>APP</h2>
         </div>
         <div className='i'>
-          <img src={imagen} alt="logo" id='logo' />
+          <img  alt="logo" id='logo' src={imagen} />
         </div>
-        <button onClick={handleHomeClick} className="back-button">Inicio</button>
-        <button onClick={handleSector1Click} className="button">5° grado</button>
-        <button onClick={handleSector2Click} className="button">6° grado</button> 
+        <button onClick={handleHomeClick} className="back-button" aria-label="inicio">Inicio</button>
+        <button onClick={handleSector1Click} className="button" aria-label="5° grado">5° grado</button>
+        <button onClick={handleSector2Click} className="button" aria-label="6° grado">6° grado</button> 
       </div>
     </header>
   );

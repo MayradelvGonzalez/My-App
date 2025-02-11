@@ -4,4 +4,12 @@
     justify-content: center;
     flex-direction: column;
     align-items:center;
+    color:black;
+    font-size: large;
     }  
+    .Sidebar h1{
+        font-size: 1.6em;
+    }
+    u{
+        text-decoration-color: blueviolet;
+    }

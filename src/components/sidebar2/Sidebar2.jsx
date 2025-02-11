@@ -5,7 +5,7 @@ return (
 
 <div className="Sidebar2">
 
-    <h4><u> Tareas y juegos opcionales</u></h4>
+    <h1><u>Tareas y juegos opcionales</u></h1>
 
     <div className="contenido">
     <ul className="listadoInfo">

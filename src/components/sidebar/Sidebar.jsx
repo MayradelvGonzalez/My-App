@@ -23,7 +23,7 @@ function Sidebar() {
 
   return (
     <div>
-      <h2><u>Tareas de la clase</u></h2>
+      <h1><u>Tareas de la clase</u></h1>
       <div className="Sidebar">
         {grade === '5' ? (
           <p>Tareas hechas y por hacer para quinto</p>

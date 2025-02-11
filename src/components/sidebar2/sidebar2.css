@@ -5,12 +5,25 @@
     justify-content: center;
     flex-direction: column;
     align-items:center;
+    font-size: 1.1em;
     }  
 
     .listadoInfo{
         font-size: 1.2em;
-        color: white;
+        color: black;
    
     }
- 
+ .Sidebar2 h1{
+    font-size: 1.6em;
+    color: black;
+    
+ }
+ u{
+    text-decoration-color: blue;
+ }
+.listadoInfo a{
+    color:black;
+    text-decoration-color: #019b98;
+    text-decoration-style: dashed;
+}
 

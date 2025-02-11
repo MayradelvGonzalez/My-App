@@ -8,9 +8,18 @@ overflow: hidden;
 }
 .carousel-item img {
     transition: transform 0.5s ease-in-out; 
-
 }
 
 .carousel-item img:hover {
     transform: scale(1.1);
+}
+.carrousel h3{
+    color: black;
+}
+.mainestilo p{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Black And White Picture", serif;
+    font-weight: 400;
+    font-style: normal;
 }
