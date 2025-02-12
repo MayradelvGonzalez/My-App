@@ -2,9 +2,9 @@
 .carrousel{
 background-color: green;
 /* border:0.5em dashed yellow; */
-height: fit-content;
 overflow: hidden;
-height: 30em;
+height: 33em;
+width: 40em;
 }
 .carousel-item img {
     transition: transform 0.5s ease-in-out; 
@@ -23,4 +23,5 @@ height: 30em;
     font-weight: 400;
     font-style: normal;
   padding-top: 0.2em;
+
 }

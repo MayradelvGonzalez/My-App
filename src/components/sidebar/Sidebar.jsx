@@ -22,9 +22,9 @@ function Sidebar() {
   const { grade } = useGrade();
 
   return (
-    <div>
+    <div> <div className="Sidebar">
       <h1><u>Tareas de la clase</u></h1>
-      <div className="Sidebar">
+     
         {grade === '5' ? (
           <p>Tareas hechas y por hacer para quinto</p>
         ) : (
