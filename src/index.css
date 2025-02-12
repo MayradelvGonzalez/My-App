@@ -62,8 +62,9 @@ code {
     background-color: transparent;
   }
   .header{
-
+font-size: large;
   box-shadow:none !important;
+height: 3em;
   }
 
 .navbar {
@@ -75,29 +76,31 @@ code {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
 
-  .sidebar,
-  .sidebar2 {
+  .sidebar {
     grid-area: sidebar; 
     background-color:  #c954da;
     height: 100%; 
-    
 padding: 0.5em;
+font-style: italic;
 
   }
 
+
   .sidebar2 {
     grid-area: sidebar2; 
-    background-color: #c954da; 
-
-
+    background-color: #c954da;
+font-style: italic;
   }
 .Sidebar2 h1 u{
   display: flex;
 justify-content: center;
 align-items:center;
 align-content:center;
+font-size: 1.4em;
+;
 }
 
   .main {
@@ -110,10 +113,11 @@ align-content:center;
   .footer {
     grid-area: footer;
     background-color: var(--color-base);
-    padding: 0.5em;
+    padding: 0.1em;
     height: fit-content; /* Altura fija en píxeles */
     display: flex;
     justify-content: center;
+    height: 7em;
   }
 .alumnos{
   width: 90%;
@@ -137,7 +141,6 @@ align-content:center;
       "footer";
     grid-template-columns: 1fr;
     gap: 10px;
-    
   }
 
   .grid-container > * {
@@ -270,7 +273,6 @@ width: 45%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
 }
 
 

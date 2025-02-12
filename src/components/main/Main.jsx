@@ -5,7 +5,7 @@ import '../carrousel/Carrousel.css';
 function Main(){
     return (
         <div className="mainestilo">
-            <p>Aprender Música es divertida!</p>
+            <p>¡Aprender Música es divertido!</p>
     <Carrousel /> 
    </div>
         

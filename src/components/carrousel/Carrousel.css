@@ -4,7 +4,7 @@ background-color: green;
 /* border:0.5em dashed yellow; */
 height: fit-content;
 overflow: hidden;
-
+height: 30em;
 }
 .carousel-item img {
     transition: transform 0.5s ease-in-out; 
@@ -19,7 +19,8 @@ overflow: hidden;
 .mainestilo p{
     font-size: 2em;
     font-weight: bold;
-    font-family: "Black And White Picture", serif;
+    font-family: "Indie Flower", serif;
     font-weight: 400;
     font-style: normal;
+  padding-top: 0.2em;
 }
