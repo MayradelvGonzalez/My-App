@@ -275,7 +275,12 @@ justify-content: center;
 
 }
 
-@media (max-width: 500px) and (max-height: 900px) { /* Rango aproximado */
+  @media (max-width: 500px) and (max-height: 900px) { 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
   .grid-container {
     grid-template-areas:
       "header"
@@ -284,15 +289,15 @@ justify-content: center;
       "sidebar"
       "sidebar2"
       "footer";
-    grid-template-columns: 1fr; /* Una sola columna */
-    gap: 10px; /* Espacio más pequeño entre elementos */
-    height: 80rem;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+ 
   }
   .header{
     display: flex;
   }
 #contenedorHeader{
-  width: 70%;
+  width: 67%;
 }
 
   .Navbar {
@@ -304,7 +309,7 @@ justify-content: center;
     justify-content: center;
   }
   .grid-container .navbar {
-    width: 50%; 
+    max-width: 50%; 
     margin-top: 5em;
   }
   .sidebar, .sidebar2 {
@@ -314,18 +319,19 @@ justify-content: center;
   }
 
   .main {
-    height: 10%;
+    max-height: 10%;
     max-width: 50%;
-/* padding-top: 2em !important; */
-/* margin-top: 2em !important; */
+
 
   }
+
   .carrousel{
     max-width: 100%;
-    max-height: 32%;
+    max-height: 40%;
     display: flex;
     justify-content: center;
-    align-items:center;    
+    align-items:center;   
+    margin-left: 0.8em; 
   }
 
   .mainestilo{
@@ -354,16 +360,17 @@ display: flex;
 
   .footer {
     height: auto;
-    width: 50%; /* Altura automática para el footer */
+    width: 50%; 
   }
 
   .grid-container > * {
-    box-shadow: 3px 2px 10px -3px black; /* Sombra más sutil */
-    padding: 10px; /* Padding reducido */
+    box-shadow: 3px 2px 10px -3px black;
+    padding: 10px; 
   }
 
   #caja {
-    font-size: 0.7rem; /* Tamaño de fuente más pequeño */
+    font-size: 0.7rem; 
+    background-color:gray !important;
   }
   
 .main-container{
@@ -371,4 +378,5 @@ max-width: fit-content;
 }
 
 
-}
+ } 
+  
