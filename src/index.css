@@ -287,22 +287,64 @@ justify-content: center;
     grid-template-columns: 1fr; /* Una sola columna */
     gap: 10px; /* Espacio más pequeño entre elementos */
   }
-
-  .navbar {
-    width: 100%;
-    flex-direction: column; /* Asegura que los elementos del navbar se apilen verticalmente */
+  .header{
+    display: flex;
   }
+#contenedorHeader{
+  width: 60%;
+}
 
+  .Navbar {
+    width: 45%;
+    flex-direction: column; 
+  }
+  .Navbar h1{
+    display: flex;
+    justify-content: center;
+  }
+  .grid-container .navbar {
+    width: 45%; 
+    margin-top: 5em;
+  }
   .sidebar, .sidebar2 {
-    height: auto; /* Ajusta la altura automáticamente */
+    height: auto; 
+    width: 45%;
   }
 
   .main {
-    min-height: auto; /* Altura automática para el contenido principal */
+    height: 10%;
+    max-width: 45%;
+padding-top: 2em !important;
+margin-top: 2em !important;
+
+  }
+  .carrousel{
+    max-width: 93%;
+    max-height: 40%;
+    
+  }
+  .mainestilo{
+    width: 45%;
+  }
+  .Sidebar2 .contenido .listadoInfo{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:medium ;
+  }
+
+  .Sidebar2 .contenido h1 u{
+    font-size: 1.2em;
+
+  
+  }
+  .Sidebar2 a{
+    color:#fbfbfb;
   }
 
   .footer {
-    height: auto; /* Altura automática para el footer */
+    height: auto;
+    width: 45%; /* Altura automática para el footer */
   }
 
   .grid-container > * {
@@ -312,6 +354,10 @@ justify-content: center;
 
   #caja {
     font-size: 0.7rem; /* Tamaño de fuente más pequeño */
+   
   }
-
+  
+.main-container{
+max-width: 100%;  
+}
 }
