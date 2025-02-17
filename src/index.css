@@ -286,6 +286,7 @@ justify-content: center;
       "footer";
     grid-template-columns: 1fr; /* Una sola columna */
     gap: 10px; /* Espacio más pequeño entre elementos */
+    height: 80rem;
   }
   .header{
     display: flex;
@@ -309,28 +310,37 @@ justify-content: center;
   .sidebar, .sidebar2 {
     height: auto; 
     width: 50%;
+
   }
 
   .main {
     height: 10%;
     max-width: 50%;
-padding-top: 2em !important;
-margin-top: 2em !important;
+/* padding-top: 2em !important; */
+/* margin-top: 2em !important; */
 
   }
   .carrousel{
     max-width: 100%;
-    max-height: 40%;
-    
+    max-height: 32%;
+    display: flex;
+    justify-content: center;
+    align-items:center;    
   }
+
   .mainestilo{
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: start;
   }
   .Sidebar2 .contenido .listadoInfo{
 display: flex;
     flex-direction: column;
     justify-content: center;
     font-size:medium ;
+
   }
 
   .Sidebar2 .contenido h1 u{
@@ -354,12 +364,10 @@ display: flex;
 
   #caja {
     font-size: 0.7rem; /* Tamaño de fuente más pequeño */
-   max-width: fit-content;
-   max-height: fit-content;
   }
   
 .main-container{
-max-width: 100%;  
+max-width: fit-content;  
 }
 
 
