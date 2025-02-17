@@ -291,7 +291,7 @@ justify-content: center;
     display: flex;
   }
 #contenedorHeader{
-  width: 60%;
+  width: 70%;
 }
 
   .Navbar {
@@ -303,23 +303,23 @@ justify-content: center;
     justify-content: center;
   }
   .grid-container .navbar {
-    width: 45%; 
+    width: 50%; 
     margin-top: 5em;
   }
   .sidebar, .sidebar2 {
     height: auto; 
-    width: 45%;
+    width: 50%;
   }
 
   .main {
     height: 10%;
-    max-width: 45%;
+    max-width: 50%;
 padding-top: 2em !important;
 margin-top: 2em !important;
 
   }
   .carrousel{
-    max-width: 93%;
+    max-width: 100%;
     max-height: 40%;
     
   }
@@ -344,7 +344,7 @@ display: flex;
 
   .footer {
     height: auto;
-    width: 45%; /* Altura automática para el footer */
+    width: 50%; /* Altura automática para el footer */
   }
 
   .grid-container > * {
@@ -354,10 +354,13 @@ display: flex;
 
   #caja {
     font-size: 0.7rem; /* Tamaño de fuente más pequeño */
-   
+   max-width: fit-content;
+   max-height: fit-content;
   }
   
 .main-container{
 max-width: 100%;  
 }
+
+
 }
