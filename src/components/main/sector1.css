@@ -1,0 +1,9 @@
+.main-container{
+    background-color:gray !important;
+    width: fit-content !important;
+}
+main{
+    background-color:aliceblue !important;
+    padding-left: 18em !important;
+    margin-left: 0 !important;
+}
