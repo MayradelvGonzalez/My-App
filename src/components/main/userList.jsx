@@ -27,21 +27,23 @@ function UserList() {
 
   return (
   
-    <div id='listado'>
-      <h1>Alumnos 5°</h1>
-      {isLoading ? (
-        <p>Cargando datos de usuarios...</p>
-      ) : error ? (
-        <p>Error al cargar los usuarios: {error}</p>
-      ) : users.length > 0 ? (
-        <ul>
-          {users.map((user) => (
-            <li key={user.id}>{user.name}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>No se encontraron usuarios.</p>
-      )}
+    <div id='listado' className="lista-scrollable">
+      <h1>Alumnos 6°</h1>
+      <div>
+        {isLoading ? (
+          <p>Cargando datos de usuarios...</p>
+        ) : error ? (
+          <p>Error al cargar los usuarios: {error}</p>
+        ) : users.length > 0 ? (
+          <ul>
+            {users.map((user) => (
+              <li key={user.id}>{user.name}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>No se encontraron usuarios.</p>
+        )}
+      </div>
     </div>
 
     
