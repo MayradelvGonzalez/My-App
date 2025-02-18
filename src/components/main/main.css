@@ -31,15 +31,7 @@
     background-color: white;
     color:black;
 }
-#listado{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 100%;
 
-
-
-}
 .main-container{
     width: 40em;
     

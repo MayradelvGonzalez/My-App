@@ -66,7 +66,30 @@ font-size: large;
   box-shadow:none !important;
 height: 5em;
   }
+  .back-button{
+    text-decoration: none;;
+  }
+  .back-button, .button {
+    /* Estilos generales para los botones */
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+    text-decoration: none; /* Para quitar el subrayado de los links */
+}
 
+.back-button:hover, .button:hover {
+    background-color: var(--color-base);
+    color: white;
+}
+
+.back-button.active, .button.active {  /* Estilos para el botón activo */
+    background-color: var(--color-base);
+    color: white;
+}
 .navbar {
     grid-area: navbar;
     background-color: #b42a43;
