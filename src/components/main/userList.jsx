@@ -26,9 +26,10 @@ function UserList() {
   }, []);
 
   return (
-  
+    <div className="containerAlumnos">
+  <div className="titulo">  <h1>Alumnos 6°</h1></div>
     <div id='listado' className="lista-scrollable">
-      <h1>Alumnos 6°</h1>
+    
       <div>
         {isLoading ? (
           <p>Cargando datos de usuarios...</p>
@@ -46,7 +47,7 @@ function UserList() {
       </div>
     </div>
 
-    
+    </div>
    );
 }
 

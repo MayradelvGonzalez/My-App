@@ -26,9 +26,9 @@ function UserList2() {
 
   return (
      
-   
+    <div className="containerAlumnos">
+  <div className="titulo">  <h1>Alumnos 6°</h1></div>
     <div id='listado' className="lista-scrollable">
-      <h1>Alumnos 6°</h1>
       <div>
         {isLoading ? (
           <p>Cargando datos de usuarios...</p>
@@ -44,7 +44,7 @@ function UserList2() {
           <p>No se encontraron usuarios.</p>
         )}
       </div>
-    </div>
+    </div></div>
    );
 }
 
