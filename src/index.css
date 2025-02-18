@@ -111,7 +111,7 @@ font-size: 1.4em;
     grid-area: footer;
     background-color: var(--color-base);
     padding: 0.1em;
-    height: fit-content; /* Altura fija en píxeles */
+    height: fit-content; 
     display: flex;
     justify-content: center;
     height: 7em;
@@ -126,7 +126,7 @@ font-size: 1.4em;
 
 
 
-@media (max-width: 767px) { 
+/* @media (max-width: 767px) { 
 
   .grid-container {
     grid-template-areas:
@@ -164,10 +164,10 @@ font-size: 1.4em;
   width: fit-content;
 }
 
-}
+} */
 
 
-
+/* 
 @media (width: 360px) and (height: 740px) {
   body {
     font-size: 14px;
@@ -231,7 +231,6 @@ header{
 
   .grid-container .main-container { 
     width: 60%; 
-/* padding-right: 2em; */
   }
   .main-container{
     min-width: 99%;
@@ -273,9 +272,9 @@ justify-content: center;
 }
 
 
-}
+} */
 
-  @media (max-width: 500px) and (max-height: 900px) { 
+  /* @media (max-width: 500px) and (max-height: 900px) { 
     * {
       box-sizing: border-box;
       margin: 0;
@@ -408,7 +407,11 @@ max-width: fit-content;
 
 
  } 
+<<<<<<< HEAD
   
 =======
 }
 >>>>>>> parent of c2a76c2 (mediaQuieries)
+=======
+   */
+>>>>>>> 3ae2da6f682dea45308a0e55a44eb115f6b5da2f
