@@ -297,7 +297,11 @@ justify-content: center;
     display: flex;
   }
 #contenedorHeader{
+<<<<<<< HEAD
   width: 67%;
+=======
+  width: 60%;
+>>>>>>> parent of c2a76c2 (mediaQuieries)
 }
 
   .Navbar {
@@ -309,11 +313,16 @@ justify-content: center;
     justify-content: center;
   }
   .grid-container .navbar {
+<<<<<<< HEAD
     max-width: 50%; 
+=======
+    width: 45%; 
+>>>>>>> parent of c2a76c2 (mediaQuieries)
     margin-top: 5em;
   }
   .sidebar, .sidebar2 {
     height: auto; 
+<<<<<<< HEAD
     width: 50%;
 
   }
@@ -322,11 +331,21 @@ justify-content: center;
     max-height: 10%;
     max-width: 50%;
 
+=======
+    width: 45%;
+  }
+
+  .main {
+    height: 10%;
+    max-width: 45%;
+padding-top: 2em !important;
+margin-top: 2em !important;
+>>>>>>> parent of c2a76c2 (mediaQuieries)
 
   }
 
   .carrousel{
-    max-width: 100%;
+    max-width: 93%;
     max-height: 40%;
     display: flex;
     justify-content: center;
@@ -360,7 +379,11 @@ display: flex;
 
   .footer {
     height: auto;
+<<<<<<< HEAD
     width: 50%; 
+=======
+    width: 45%; /* Altura automática para el footer */
+>>>>>>> parent of c2a76c2 (mediaQuieries)
   }
 
   .grid-container > * {
@@ -369,14 +392,23 @@ display: flex;
   }
 
   #caja {
+<<<<<<< HEAD
     font-size: 0.7rem; 
     background-color:gray !important;
+=======
+    font-size: 0.7rem; /* Tamaño de fuente más pequeño */
+   
+>>>>>>> parent of c2a76c2 (mediaQuieries)
   }
   
 .main-container{
 max-width: fit-content;  
 }
+<<<<<<< HEAD
 
 
  } 
   
+=======
+}
+>>>>>>> parent of c2a76c2 (mediaQuieries)
